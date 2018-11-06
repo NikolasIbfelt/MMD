@@ -1,0 +1,77 @@
+/* Mit CSS 
+(C) Copyright 2017: Niels Østergaard
+Eksempler på CSS Grid */
+
+body {
+    font-family: sans-serif;
+    background-color: #999999;
+    margin: 1em;
+}
+
+#mitgrid div {
+    font-size: 5em;
+    color: #000000;
+    text-align: center;
+    border-color: #000000;
+    border-width: 2px;
+    border-style: dashed;
+}
+/* brug bedre navne end a,b,c... kald det rigtige navne */
+#mitgrid {
+    display:grid;
+    grid-gap: 10px;
+    grid-template-columns: 1fr 3fr 1fr;
+    grid-template-rows: 2fr 1fr 1fr 1fr 1fr;
+    grid-template-areas:
+        "a a a"
+        "d c e"
+        "d c e"
+        "b f g"
+        "h h h";
+    
+}  
+
+#mitgrid div:nth-child(1){
+    background-color:#FFF;
+    grid-area: a;
+}
+    
+#felt2 {
+    grid-area: b;
+    
+
+}
+
+#felt3 {
+    background-color: #fc0;
+    grid-area: c;
+
+}
+
+#felt4 {
+    background-color: #F06;
+    grid-area: d;
+
+
+}
+#felt5 {
+    background-color: #63F;
+    grid-area: e;
+    
+}
+    
+#felt6 {
+    grid-area: f;
+    
+}
+
+#felt7 {
+    grid-area: g;
+    
+
+}
+#felt8 {
+    background-color: #cf0;
+    grid-area: h;
+}
+ 
